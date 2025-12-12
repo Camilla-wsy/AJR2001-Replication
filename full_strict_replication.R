@@ -956,11 +956,11 @@ cat("\n\n============================================================\n")
 cat("EXTENSION: REGIONAL HETEROGENEITY ANALYSIS\n")
 cat("============================================================\n\n")
 
-# Extension: Regional analysis
+# Extension: Regional analysis 
 ajr_ext <- read_dta("data/maketable4.dta")
 base_ext <- ajr_ext %>% filter(baseco == 1)
 
-# Split by continent
+# Split by continent 
 africa_ext <- base_ext %>% filter(africa == 1)
 non_africa_ext <- base_ext %>% filter(africa != 1)
 
@@ -1071,3 +1071,4 @@ cat("  ✓ Add extension: Regional heterogeneity + outlier sensitivity\n")
 cat("  ✓ Discuss data cleaning: Sample selection, missing values\n")
 cat("  ✓ Discuss assumptions: IV relevance, exclusion restriction\n")
 cat("  ✓ Econometric interpretation: OLS vs IV, economic magnitude\n")
+# finished
